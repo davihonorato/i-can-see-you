@@ -1,0 +1,32 @@
+body {
+    background-color: teal;
+}
+
+.box {
+    position: absolute;
+    width: 600px;
+    height:400px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blanchedalmond;
+}
+
+.left-eye {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 49%;
+    background-color: black;
+}
+
+.right-eye {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 49%;
+    background-color: white;
+}
