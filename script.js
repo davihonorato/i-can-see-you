@@ -10,12 +10,13 @@ window.addEventListener('mousemove', function(e) {
     var mouseY = e.clientY;
 
     // define a posição da pupila dos olhos
-    var positionX = (mouseX / screenWidth) * 100;
-    var positionY = (mouseY / screeHeight) * 100;
+    var positionX = (mouseX / screenWidth) * 100 + "%";
+    var positionY = (mouseY / screeHeight) * 100 + "%";
 
     // define a posição de cada pupila
     eyeball.forEach(eyeball => {
-        eyeball.style.left = positionX + "%";
-        eyeball.style.top = positionY + "%";
+        eyeball.style.left = positionX;
+        eyeball.style.top = positionY;
+        eyeball.style.transform = `translate(-${positionX}, -${positionY})`
     });
 })
