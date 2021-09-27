@@ -1,32 +1,49 @@
 body {
+    padding: 0px;
+    margin: 0px;
     background-color: teal;
 }
 
-.box {
+.text {
+    padding: 20px 0px;
+    margin: 30px 0px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #331300;
+    font-weight: bolder;
+}
+
+.eyes {
     position: absolute;
-    width: 600px;
-    height:400px;
+    text-align: center;
+    width: 100%;
     padding: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: blanchedalmond;
 }
 
-.left-eye {
-    display: block;
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    border-radius: 49%;
-    background-color: black;
-}
-
-.right-eye {
-    display: block;
-    position: absolute;
-    width: 40%;
-    height: 40%;
-    border-radius: 49%;
+.eye {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 50%;
     background-color: white;
+    box-shadow: inset 0px 6px 20px 8px black;
+}
+
+.pupil-eye {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    border: 15px solid #331300;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
